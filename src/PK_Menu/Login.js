@@ -46,10 +46,6 @@ export default function Login() {
     setPasswordValue('');
   };
 
-  const evaluate_color = (login_successful) => {
-    return login_successful ? 'green' : 'red';
-  };
-
   return (
     <div className='login-container'>
       <div className='login-form'>
