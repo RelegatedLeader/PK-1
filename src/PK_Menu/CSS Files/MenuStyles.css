@@ -1,3 +1,4 @@
+/* MenuStyles.css */
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -12,10 +13,17 @@
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the text inside menu-options */
 }
 
 .menu-options h1 {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
   margin-bottom: 20px;
 }
 
@@ -34,7 +42,14 @@
   background-color: darkgray;
 }
 
-/**rainbow button **/
+/** rainbow button **/
+.glow-on-hover {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
 .glow-on-hover:before {
   content: '';
   background: linear-gradient(
@@ -85,5 +100,17 @@
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 /* end of it */
