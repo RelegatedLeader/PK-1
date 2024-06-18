@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../PK_Menu/CSS Files/LoginStyles.css'; // Adjust the path based on your project structure
 import { Link, useNavigate } from 'react-router-dom';
-import SecurityCodeLogin from './SecurityCodeLogin';
 
 export default function Login() {
   const [usernameValue, setUsernameValue] = useState('');
